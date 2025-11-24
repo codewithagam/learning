@@ -1,0 +1,41 @@
+.container{
+    background-color: brown;
+    border:2px solid black;
+    height:900px;
+   display: grid;
+   grid-template-columns: 100px 400px;
+   grid-template-rows: 100px 1fr 100px;
+   grid-template-areas: 
+   "hd hd" 
+   "sd con" 
+   "fot fot" ;
+}
+.box1,.box2,.box3,.box4{
+    background-color: blue;
+    border:2px solid black;
+
+}
+.box1{
+    grid-area: hd;
+}
+.box2{
+    grid-area: sd;
+}
+.box3{
+    grid-area: con;
+}
+.box4{
+    grid-area: fot;
+}
+.children{
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.box{
+    background-color: aquamarine;
+    border:2px solid black;
+}
