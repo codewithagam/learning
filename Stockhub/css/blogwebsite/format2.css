@@ -1,0 +1,30 @@
+.container{
+    height: 1000px;
+    background-color: aqua;
+    border:2px solid black;
+  display: grid;
+  grid-template-rows: 30px 1fr 1fr 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "hd "
+  "st"
+   "main"
+   "ft"
+   ;
+}
+.box{
+background-color: bisque;
+border:2px solid black;
+}
+.box1{
+    grid-area: hd;
+}
+.box2{
+    grid-area:st;
+}
+.box3{
+    grid-area: main;
+}
+.box4{
+    grid-area: ft;
+}
