@@ -1,0 +1,15 @@
+:root{
+        --dark-red:#981a2c;
+}
+.CONTAINER{
+    border:2px solid black;
+    background-color: aquamarine;
+    height: 300px;
+    width:300px;
+}
+.box{
+    border:2px solid var(--dark-red);
+
+    color:var(--dark-red);
+    background-color: bisque;
+}
