@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    position:relative;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery figure {
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+.gallery figcaption {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position:absolute;
+   
+}
+.gallery img:hover figcaption {
+    transform:scale(1.5); 
+}
